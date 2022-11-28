@@ -1,0 +1,41 @@
+.header {
+    background-color: $zelena;
+    border-bottom: 3px solid $bezova;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 900px) {
+    .header__inner {
+        max-width: 1400px;
+    }
+}
+
+.header h3 {
+    font-size: 30px;
+    color: white;
+    margin-left: 40px;
+}
+
+.header__menu a {
+    text-decoration: none;
+    color: white;
+    margin: 15px;
+    font-size: 18px;
+}
+
+.header__menu a:hover, .header__menu a:active {
+    color: $bezova;
+    font-size: 22px;
+}
+
+.header__menu:last-child {
+    margin-right: 60px;
+}

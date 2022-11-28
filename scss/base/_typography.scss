@@ -1,0 +1,32 @@
+.container {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'News Cycle', sans-serif;
+}
+
+.introduction__name {
+    font-size: 20px;
+}
+
+@media (min-width: 780px) {
+    .container {
+        font-size: 18px;
+    }
+
+    .introduction__info {
+        font-size: 20px;
+    }
+
+    .introduction__name {
+        font-size: 28px;
+    }
+
+    .hero__name {
+        font-size: 33px;
+    }
+
+    .hero__name span {
+        font-size: 38px;
+    }
+}
+

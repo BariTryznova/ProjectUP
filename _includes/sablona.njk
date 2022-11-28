@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/css/style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="container">
+
+        <header class="header">
+
+            <div class="header__inner">
+                
+                <h3>Project UP</h3>
+
+                <nav class="header__menu">
+                    <a href="/">O nás</a>
+                    <a href="/co-delame/">Co děláme</a>
+                    <a href="/realizace/">Realizace</a>
+                    <a class="header__menu--margin" href="#">Kontakt</a>
+                </nav>
+
+            </div>
+
+        </header>
+
+        <div class="section hero">
+            <div class="hero__inner">
+                <h1>Kvalitně. <span class="highlight">Ekologicky. <br>Ekonomicky. </span> Udržitelně. </h1> 
+            </div>
+        </div>
+
+        {{ content | safe }}
+
+        <footer class="footer">
+            <img src="/images/Woodstav-logo.png" class="footer__image" alt="footer__image">
+            <p>Realizace staveb ve spolupráci s
+                WOODSTAV.CZ s.r.o.	
+                č.p. 17, 517 03 Skuhrov nad Bělou	
+                www.woodstav.cz	</p>
+        </footer>
+
+
+    </main>    
+
+</body>
+</html> 
