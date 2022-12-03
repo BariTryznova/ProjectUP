@@ -5,13 +5,68 @@
     border-bottom: 3px solid variables.$bezova;
 }
 
+.menu__checkbox {
+    display: none;
+}
+
+.menu__toggler {
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+.menu__list {
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: variables.$zelena;
+}
+
+.menu__link {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.menu__link:hover {
+    color: variables.$bezova;
+}
+
+.menu__checkbox:checked ~ .menu__list {
+    display: block;
+}
+
+.menu__toggler {
+    cursor: pointer;
+}
+
 .header__inner {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
+    column-gap: 100px;
+}
+
+.logo-projectup {
+    margin-left: 150px;
+    margin-top: 15px;
+}
+
+@media (min-width: 700px) {
+    .menu__toggler {
+        display: none;
+    }
+
+    .menu__list {
+        display: flex;
+    }
+
+    .header__inner {
+        justify-content: space-between;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media (min-width: 900px) {

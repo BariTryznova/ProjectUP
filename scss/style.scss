@@ -44,6 +44,7 @@
 .obal-introduction {
     background-color: variables.$stribrna;
 }
+
 .introduction {
     min-height: 450px;
 }
@@ -65,7 +66,6 @@
 }
 
 .introduction h3 {
-    font-size: 16px;
     text-align: center;
     margin: 0 60px 20px 60px;
 }
@@ -88,7 +88,7 @@
     }
 
     .introduction__image {
-        max-width: 250px;
+        max-width: 350px;
         max-height: 130px;
         flex: 1 1 30%;
         position: static;
@@ -109,9 +109,17 @@
         margin-right: variables.$margin-strany;
     }
 
+    .introduction__inner h1 {
+        margin-top: 50px;
+    }
+
     .introduction__image {
-        max-width: 400px;
-        max-height: 230px;
+        max-width: 500px;
+        max-height: 330px;
+    }
+
+    .introduction {
+        min-height: 450px;
     }
 }
 

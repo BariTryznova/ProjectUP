@@ -2,11 +2,12 @@
 
 
 .container-boxes__item {
-    background-color: variables.$bezova;
+    background-color: variables.$zelena;
     color: white;
     padding: 20px 30px;
     margin: 20px;
     border-radius: 15px;
+    box-shadow: grey 4px 6px 10px;
 } 
 
 @media (min-width: 640px) {
@@ -22,6 +23,7 @@
 
   @media (min-width: 900px) {
     .container-boxes__inner {
+        margin-top: 30px;  
         max-width: 1400px;
         margin-left: auto;
         margin-right: auto;
