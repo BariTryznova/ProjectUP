@@ -1,6 +1,8 @@
+@use '../helpers/variables';
+
 .header {
-    background-color: $zelena;
-    border-bottom: 3px solid $bezova;
+    background-color: variables.$zelena;
+    border-bottom: 3px solid variables.$bezova;
 }
 
 .header__inner {
@@ -32,7 +34,7 @@
 }
 
 .header__menu a:hover, .header__menu a:active {
-    color: $bezova;
+    color: variables.$bezova;
     font-size: 22px;
 }
 

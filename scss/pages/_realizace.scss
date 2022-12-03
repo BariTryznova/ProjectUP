@@ -1,13 +1,47 @@
+@use '../helpers/variables';
+
 .container-realizace__boxes {
     text-align: center;
+    padding: 30px;
 }
 
 .container-realizace__grid {
     grid-template-columns: 1fr;
 }
 
+.container-realizace__image {
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.skuhrov {
+    background-color: variables.$stribrna;
+}
+
+.luisa {
+    background-color: variables.$zelena;
+    color: white;
+}
+
+
+.container-realizace--margin {
+    margin-top: 0;
+}
+
 @media (min-width: 640px) {
     .container-realizace__grid {
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 900px) {
+    .container-realizace__grid {
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container-realizace__grid {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }

@@ -1,11 +1,10 @@
-@use '/scss/main/main';  
-@use '/scss/base/typography';
-@use '/scss/helpers/variables';  
-@use '/scss/layout/header';
-@use '/scss/pages/realizace';
-@use '/scss/layout/footer';
-@use '/scss/pages/codelame';
-@use '/scss/pages/realizace';
+@use 'main/main';  
+@use 'base/typography';
+@use 'helpers/variables';  
+@use 'layout/header';
+@use 'pages/realizace';
+@use 'layout/footer';
+@use 'pages/codelame';
 
 /* hero section */ 
 
@@ -16,7 +15,7 @@
 }
 
 .hero h1 {
-    margin: 0 60px;
+    margin: 0 30px;
     padding-top: 40px;
     font-size: 30px;
     text-align: right;
@@ -33,16 +32,20 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    .hero h1 {
+        margin-right: variables.$margin-strany
+    }
 }
 
 
 /* section introduction */
 
 .obal-introduction {
-    background-color: $stribrna;
+    background-color: variables.$stribrna;
 }
 .introduction {
-    min-height: 420px;
+    min-height: 450px;
 }
 
 .introduction {
@@ -90,20 +93,20 @@
         flex: 1 1 30%;
         position: static;
         align-self: center;
-        margin-right: $margin-strany;
+        margin-right: variables.$margin-strany;
     }
 
     .introduction__inner {
         flex: 1 1 30%;
         margin-top: 30px;
-        margin-left: $margin-strany;
+        margin-left: variables.$margin-strany;
     }
 }
 
 @media (min-width: 780px) {
     .introduction__inner h1, .introduction__inner p, .introduction__inner h3 {
         text-align: right;
-        margin-right: $margin-strany;
+        margin-right: variables.$margin-strany;
     }
 
     .introduction__image {
@@ -124,7 +127,7 @@
 
 .ikona {
     max-width: 100px;
-    fill: $zelena;
+    fill: variables.$zelena;
     max-height: 100px;
 }
 
@@ -144,7 +147,7 @@
 }
 
 .box h3 {
-    color: $zelena;
+    color: variables.$zelena;
 }
 
 @media (min-width: 640px) {
@@ -158,12 +161,12 @@
     }
 
     .kvalitni, .ekonomicky {
-        margin-right: $margin-strany;
+        margin-right: variables.$margin-strany;
         margin-left: 30px;
     }
 
     .udrzitelna, .ekologicky {
-        margin-left:  $margin-strany;
+        margin-left:  variables.$margin-strany;
         margin-right: 30px;
     }
 }
@@ -188,11 +191,11 @@
     }
     
     .ekologicky {
-        margin-left: $margin-strany;
+        margin-left: variables.$margin-strany;
     }
 
     .kvalitni {
-        margin-right: $margin-strany;
+        margin-right: variables.$margin-strany;
     }
 }
 
@@ -206,7 +209,7 @@
 }
 
 .obal-specific {
-    background-color: $zelena;
+    background-color: variables.$zelena;
 }
 
 .specific h3 {

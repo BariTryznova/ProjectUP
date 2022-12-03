@@ -1,10 +1,10 @@
-@use '/scss/helpers/variables';
+@use '../helpers/variables';
 
 
 .container-boxes__item {
-    background-color: $bezova;
+    background-color: variables.$bezova;
     color: white;
-    padding: 20px;
+    padding: 20px 30px;
     margin: 20px;
     border-radius: 15px;
 } 
@@ -18,4 +18,20 @@
     .container-boxes__item {
       flex: 1 1 40%;
     }
+}
+
+  @media (min-width: 900px) {
+    .container-boxes__inner {
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+  @media (min-width: 1200px) {
+    .container-boxes__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
   }
+

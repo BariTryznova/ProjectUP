@@ -28,5 +28,22 @@
     .hero__name span {
         font-size: 38px;
     }
+
+    .header__menu a {
+        font-size: 20px;
+    }
 }
 
+// page - co delame
+
+.container-boxes__item {
+    text-align: center;
+}
+
+// page - realizace 
+
+@media (min-width: 780px)  {
+    .container-realizace__boxes h3 {
+        font-size: 25px;
+    }
+}

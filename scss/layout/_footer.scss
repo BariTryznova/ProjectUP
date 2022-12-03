@@ -1,3 +1,5 @@
+@use '../helpers/variables';
+
 .footer {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -10,5 +12,5 @@
 }
 
 .footer p {
-    margin: 30px $margin-strany 0 30px;
+    margin: 30px variables.$margin-strany 0 30px;
 }
