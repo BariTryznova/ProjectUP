@@ -11,11 +11,11 @@
 .hero {
     background-image: url(/images/Homepage-image.jpeg);
     color: white;
-    min-height: 220px;
+    min-height: 280px;
 }
 
 .hero h1 {
-    margin: 0 30px;
+    margin: 0 35px;
     padding-top: 40px;
     font-size: 30px;
     text-align: right;
@@ -23,7 +23,7 @@
 
 .highlight {
     font-weight: 700;
-    font-size: 35px;
+    font-size: 40px;
 }
 
 @media (min-width: 900px) {
@@ -76,32 +76,10 @@
     left: calc((100% - 400px) / 2);
     top: 270px;
     border-radius: 15px;
-    box-shadow: lightgrey 4px 6px 10px;
+    box-shadow: grey 4px 6px 10px;
+    border: 2px solid variables.$bezova;
 }
 
-@media (min-width: 640px) {
-    .introduction {
-        display: flex;
-        flex-direction: row;
-        position: static;
-        min-height: 300px;
-    }
-
-    .introduction__image {
-        max-width: 350px;
-        max-height: 130px;
-        flex: 1 1 30%;
-        position: static;
-        align-self: center;
-        margin-right: variables.$margin-strany;
-    }
-
-    .introduction__inner {
-        flex: 1 1 30%;
-        margin-top: 30px;
-        margin-left: variables.$margin-strany;
-    }
-}
 
 @media (min-width: 780px) {
     .introduction__inner h1, .introduction__inner p, .introduction__inner h3 {
@@ -110,16 +88,35 @@
     }
 
     .introduction__inner h1 {
-        margin-top: 50px;
+        margin-top: 30px;
     }
 
     .introduction__image {
-        max-width: 500px;
-        max-height: 330px;
+        max-width: 450px;
+        max-height: 300px;
     }
 
     .introduction {
-        min-height: 450px;
+        min-height: 500px;
+    }
+    .introduction {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        min-height: 300px;
+    }
+    
+    .introduction__image {
+    flex: 1 1 30%;
+    position: static;
+    align-self: center;
+    margin-right: variables.$margin-strany;
+    }
+    
+    .introduction__inner {
+    flex: 1 1 30%;
+    margin-top: 30px;
+    margin-left: variables.$margin-strany;
     }
 }
 
@@ -195,7 +192,7 @@
     }
 
     .box {
-        margin: 30px 15px;
+        margin: 50px 15px;
     }
     
     .ekologicky {

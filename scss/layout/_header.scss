@@ -31,6 +31,7 @@
 
 .menu__link:hover {
     color: variables.$bezova;
+    border-bottom: 1px solid variables.$bezova
 }
 
 .menu__checkbox:checked ~ .menu__list {
@@ -39,16 +40,16 @@
 
 .menu__toggler {
     cursor: pointer;
+    font-size: 30px;
 }
 
 .header__inner {
     display: flex;
     align-items: center;
-    column-gap: 100px;
 }
 
 .logo-projectup {
-    margin-left: 150px;
+    margin-left: 60px;
     margin-top: 15px;
 }
 
@@ -72,6 +73,9 @@
 @media (min-width: 900px) {
     .header__inner {
         max-width: 1400px;
+    }
+    .logo-projectup {
+        margin-left: 150px;
     }
 }
 
