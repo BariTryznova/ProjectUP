@@ -36,12 +36,30 @@
 
 @media (min-width: 900px) {
     .container-realizace__grid {
-        max-width: 1400px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .container-realizace__grid {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+    .container-realizace__image {
+        grid-area: foto;
+    }
+
+    .skuhrov .container-realizace__image {
+        box-shadow: grey 4px 6px 10px;
+        border: 1px solid variables.$zelena;
+    }
+
+    .kanada .container-realizace__image {
+        box-shadow: grey 4px 6px 10px;
+        border: 1px solid variables.$bezova;
+    }
+    
+    .luisa .container-realizace__image {
+        box-shadow: #363636 4px 6px 10px;
+        border: 1px solid variables.$bezova;
     }
 }
