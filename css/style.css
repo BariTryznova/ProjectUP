@@ -52,6 +52,11 @@ body {
     font-size: 25px;
   }
 }
+@media (min-width: 780px) {
+  .container-kontakt__inner {
+    font-size: 20px;
+  }
+}
 .header {
   background-color: #3B5438;
   border-bottom: 3px solid #BE9577;
@@ -81,7 +86,7 @@ body {
   text-decoration: none;
 }
 
-.menu__link:hover {
+.menu__link:hover, .menu__link:focus, .menu__link:active {
   color: #BE9577;
   border-bottom: 1px solid #BE9577;
 }
@@ -213,7 +218,7 @@ body {
 
 .footer__image {
   max-width: 100px;
-  margin: 30px 0 30px 120px;
+  margin: 30px 0 30px 60px;
   justify-self: center;
 }
 
@@ -226,6 +231,9 @@ body {
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .footer__image {
+    margin-left: 150px;
   }
 }
 .container-boxes__item {
@@ -258,6 +266,69 @@ body {
   .container-boxes__inner {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.container-kontakt {
+  background-color: #C9C5C2;
+}
+
+.container-kontakt__inner {
+  padding: 30px 0 30px 0;
+}
+
+.container-kontakt__list {
+  margin-top: 30px;
+}
+
+.container-kontakt__image {
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: grey 4px 6px 10px;
+  border: 1px solid #BE9577;
+  margin-left: calc(50% - 125px);
+  margin-top: 30px;
+}
+
+.container-kontakt__list {
+  list-style: none;
+  margin-left: calc(50% - 170px);
+}
+
+.container-kontakt__link {
+  text-decoration: none;
+  color: #3B5438;
+}
+
+.container-kontakt__link:hover, .container-kontakt__link:active {
+  color: #BE9577;
+}
+
+@media (min-width: 640px) {
+  .container-kontakt__inner {
+    display: flex;
+  }
+  .container-kontakt__image {
+    margin-left: 60px;
+    margin-bottom: 60px;
+  }
+  .container-kontakt__list {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 900px) {
+  .container-kontakt__inner {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+  }
+  .container-kontakt__list {
+    margin-left: 30px;
+  }
+  .container-kontakt__image {
+    margin-left: 150px;
+    width: 300px;
   }
 }
 /* hero section */

@@ -29,9 +29,9 @@
     text-decoration: none;
 }
 
-.menu__link:hover {
+.menu__link:hover, .menu__link:focus, .menu__link:active {
     color: variables.$bezova;
-    border-bottom: 1px solid variables.$bezova
+    border-bottom: 1px solid variables.$bezova;
 }
 
 .menu__checkbox:checked ~ .menu__list {
