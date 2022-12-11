@@ -116,9 +116,12 @@ body {
   margin-top: 15px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 640px) {
   .menu__toggler {
     display: none;
+  }
+  .menu__item--margin {
+    margin-right: 30px;
   }
   .menu__list {
     display: flex;
@@ -131,11 +134,14 @@ body {
   }
 }
 @media (min-width: 900px) {
+  .menu__item--margin {
+    margin-right: 0;
+  }
   .header__inner {
-    max-width: 1400px;
+    max-width: 1300px;
   }
   .logo-projectup {
-    margin-left: 150px;
+    margin-left: 100px;
   }
 }
 .header h3 {
@@ -144,20 +150,11 @@ body {
   margin-left: 40px;
 }
 
-.header__menu a {
+.menu__link {
   text-decoration: none;
   color: white;
   margin: 15px;
   font-size: 18px;
-}
-
-.header__menu a:hover, .header__menu a:active {
-  color: #BE9577;
-  font-size: 22px;
-}
-
-.header__menu:last-child {
-  margin-right: 60px;
 }
 
 .container-realizace__boxes {
@@ -227,27 +224,28 @@ body {
 }
 .footer {
   display: flex;
-  margin-top: 30px;
+  padding: 30px;
+  align-items: center;
 }
 
 .footer__image {
   max-width: 100px;
-  margin: 30px 0 30px 60px;
-  justify-self: center;
+  margin-right: 30px;
 }
 
-.footer p {
-  margin: 30px 0 30px 30px;
+@media (min-width: 640px) {
+  .footer__image {
+    margin-left: 60px;
+  }
 }
-
 @media (min-width: 900px) {
+  .footer__image {
+    margin-left: 0;
+  }
   .footer {
-    max-width: 1400px;
+    max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
-  }
-  .footer__image {
-    margin-left: 150px;
   }
 }
 .container-boxes {
@@ -357,11 +355,11 @@ body {
 .hero {
   background-image: url(/images/Homepage-image.jpeg);
   color: white;
-  min-height: 280px;
+  min-height: 320px;
 }
 
 .hero h1 {
-  margin: 0 35px;
+  margin: 0 30px 0 0;
   padding-top: 40px;
   font-size: 30px;
   text-align: right;
@@ -369,30 +367,27 @@ body {
 
 .highlight {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 38px;
 }
 
-@media (min-width: 900px) {
-  .hero__inner {
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+@media (min-width: 640px) {
   .hero h1 {
     margin-right: 60px;
+  }
+}
+@media (min-width: 900px) {
+  .hero h1 {
+    margin: 0 30px 0 0;
+  }
+  .hero__inner {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /* section introduction */
 .obal-introduction {
   background-color: #C9C5C2;
-}
-
-.introduction {
-  min-height: 450px;
-}
-
-.introduction {
-  position: relative;
 }
 
 .introduction h1 {
@@ -413,53 +408,26 @@ body {
 }
 
 .introduction__image {
-  max-width: 400px;
-  position: absolute;
-  left: calc((100% - 400px) / 2);
-  top: 270px;
+  width: 350px;
+  height: auto;
+  margin-left: calc(50% - 175px);
+  margin-bottom: -80px;
   border-radius: 15px;
   box-shadow: grey 4px 6px 10px;
-  border: 2px solid #BE9577;
 }
 
-@media (min-width: 780px) {
-  .introduction__inner h1, .introduction__inner p, .introduction__inner h3 {
-    text-align: right;
-    margin-right: 60px;
-  }
-  .introduction__inner h1 {
-    margin-top: 30px;
-  }
-  .introduction__image {
-    max-width: 450px;
-    max-height: 300px;
-  }
-  .introduction {
-    min-height: 500px;
-  }
-  .introduction {
-    display: flex;
-    flex-direction: row;
-    position: static;
-    min-height: 300px;
-  }
-  .introduction__image {
-    flex: 1 1 30%;
-    position: static;
-    align-self: center;
-    margin-right: 60px;
-  }
-  .introduction__inner {
-    flex: 1 1 30%;
-    margin-top: 30px;
-    margin-left: 60px;
-  }
-}
 @media (min-width: 900px) {
   .introduction {
-    max-width: 1400px;
+    max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    padding: 60px 0 60px 0;
+  }
+  .introduction__image {
+    width: 450px;
+    height: auto;
+    margin: 0;
   }
 }
 /* section icons */
@@ -481,7 +449,7 @@ body {
 }
 
 .ekologicky {
-  margin-top: 220px;
+  margin-top: 120px;
 }
 
 .box h3 {
@@ -495,6 +463,9 @@ body {
   }
   .ekologicky {
     margin-top: 20px;
+  }
+  .ekologicky, .ekonomicky {
+    margin-top: 120px;
   }
   .kvalitni, .ekonomicky {
     margin-right: 60px;
@@ -543,7 +514,7 @@ body {
 
 .specific {
   text-align: left;
-  padding: 30px 60px;
+  padding: 20px 30px;
   color: white;
 }
 
@@ -563,11 +534,14 @@ body {
   .container-specific__image {
     width: 450px;
     margin-left: 0;
-    margin-top: calc(50% - 150px);
+    margin-top: calc(50% - 130px);
   }
   .container-specific__inner {
     max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .specific {
+    padding: 60px 0 60px 30px;
   }
 }/*# sourceMappingURL=style.css.map */

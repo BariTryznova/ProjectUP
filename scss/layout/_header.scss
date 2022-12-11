@@ -53,9 +53,13 @@
     margin-top: 15px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 640px) {
     .menu__toggler {
         display: none;
+    }
+
+    .menu__item--margin {
+        margin-right: 30px;
     }
 
     .menu__list {
@@ -71,11 +75,15 @@
 }
 
 @media (min-width: 900px) {
+    .menu__item--margin {
+        margin-right: 0;
+    }
+
     .header__inner {
-        max-width: 1400px;
+        max-width: 1300px;
     }
     .logo-projectup {
-        margin-left: 150px;
+        margin-left: 100px;
     }
 }
 
@@ -85,18 +93,10 @@
     margin-left: 40px;
 }
 
-.header__menu a {
+.menu__link {
     text-decoration: none;
     color: white;
     margin: 15px;
     font-size: 18px;
 }
 
-.header__menu a:hover, .header__menu a:active {
-    color: variables.$bezova;
-    font-size: 22px;
-}
-
-.header__menu:last-child {
-    margin-right: 60px;
-}

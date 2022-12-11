@@ -12,11 +12,11 @@
 .hero {
     background-image: url(/images/Homepage-image.jpeg);
     color: white;
-    min-height: 280px;
+    min-height: 320px;
 }
 
 .hero h1 {
-    margin: 0 35px;
+    margin: 0 30px 0 0;;
     padding-top: 40px;
     font-size: 30px;
     text-align: right;
@@ -24,18 +24,24 @@
 
 .highlight {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 38px;
+}
+
+@media (min-width: 640px) {
+    .hero h1 {
+        margin-right: 60px;
+    }
 }
 
 @media (min-width: 900px) {
-    .hero__inner {
-        max-width: 1400px;
-        margin-left: auto;
-        margin-right: auto;
+    .hero h1 {
+        margin: 0 30px 0 0;
     }
 
-    .hero h1 {
-        margin-right: variables.$margin-strany
+    .hero__inner {
+        max-width: 1300px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -44,14 +50,6 @@
 
 .obal-introduction {
     background-color: variables.$stribrna;
-}
-
-.introduction {
-    min-height: 450px;
-}
-
-.introduction {
-    position: relative;
 }
 
 .introduction h1 {
@@ -72,61 +70,31 @@
 }
 
 .introduction__image {
-    max-width: 400px;
-    position: absolute;
-    left: calc((100% - 400px) / 2);
-    top: 270px;
+    width: 350px;
+    height: auto;
+    margin-left: calc(50% - 175px);
+    margin-bottom: -80px;
     border-radius: 15px;
     box-shadow: grey 4px 6px 10px;
-    border: 2px solid variables.$bezova;
 }
 
-
-@media (min-width: 780px) {
-    .introduction__inner h1, .introduction__inner p, .introduction__inner h3 {
-        text-align: right;
-        margin-right: variables.$margin-strany;
-    }
-
-    .introduction__inner h1 {
-        margin-top: 30px;
-    }
-
-    .introduction__image {
-        max-width: 450px;
-        max-height: 300px;
-    }
-
-    .introduction {
-        min-height: 500px;
-    }
-    .introduction {
-        display: flex;
-        flex-direction: row;
-        position: static;
-        min-height: 300px;
-    }
-    
-    .introduction__image {
-    flex: 1 1 30%;
-    position: static;
-    align-self: center;
-    margin-right: variables.$margin-strany;
-    }
-    
-    .introduction__inner {
-    flex: 1 1 30%;
-    margin-top: 30px;
-    margin-left: variables.$margin-strany;
-    }
-}
 
 @media (min-width: 900px) {
     .introduction {
-        max-width: 1400px;
+        max-width: 1300px;
         margin-left: auto;
         margin-right: auto;
+        display: flex;
+        padding: 60px 0 60px 0;
     }
+
+    .introduction__image {
+        width: 450px;
+        height: auto;
+        margin: 0;
+    }
+
+
 }
 
 /* section icons */
@@ -149,7 +117,7 @@
 }
 
 .ekologicky {
-    margin-top: 220px;
+    margin-top: 120px;
 }
 
 .box h3 {
@@ -164,6 +132,10 @@
 
     .ekologicky {
         margin-top: 20px;
+    }
+
+    .ekologicky, .ekonomicky {
+        margin-top: 120px;
     }
 
     .kvalitni, .ekonomicky {
@@ -221,7 +193,7 @@
 
 .specific {
     text-align: left;
-    padding: 30px 60px;
+    padding: 20px 30px;
     color: white;
 }
 
@@ -242,13 +214,17 @@
     .container-specific__image {
         width: 450px;
         margin-left: 0;
-        margin-top: calc(50% - 150px);
+        margin-top: calc(50% - 130px);
     }
 
     .container-specific__inner {
         max-width: 1300px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .specific {
+        padding: 60px 0 60px 30px;
     }
 }
 
