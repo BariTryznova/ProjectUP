@@ -10,9 +10,8 @@
 }
 
 .menu__toggler {
-    width: 30px;
-    height: 30px;
     color: white;
+    margin-right: 30px;
 }
 
 .menu__list {
@@ -46,6 +45,7 @@
 .header__inner {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .logo-projectup {

@@ -73,9 +73,8 @@ body {
 }
 
 .menu__toggler {
-  width: 30px;
-  height: 30px;
   color: white;
+  margin-right: 30px;
 }
 
 .menu__list {
@@ -109,6 +108,7 @@ body {
 .header__inner {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo-projectup {
@@ -240,7 +240,7 @@ body {
 }
 @media (min-width: 900px) {
   .footer__image {
-    margin-left: 0;
+    margin-left: 60px;
   }
   .footer {
     max-width: 1300px;
@@ -338,7 +338,7 @@ body {
 }
 @media (min-width: 900px) {
   .container-kontakt__inner {
-    max-width: 1400px;
+    max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 30px;
@@ -347,7 +347,7 @@ body {
     margin-left: 30px;
   }
   .container-kontakt__image {
-    margin-left: 150px;
+    margin-left: 80px;
     width: 300px;
   }
 }
