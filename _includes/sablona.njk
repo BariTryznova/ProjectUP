@@ -85,8 +85,8 @@
 
         {{ content | safe }}
 
-        <footer class="footer">
-            <a href="https://www.woodstav.cz/#!/" target="blank"> <img src="/images/Woodstav-logo.png" class="footer__image" alt="footer__image"> </a>
+        <footer class="footer {{ 'footer--background-color' if page.fileSlug === 'co-delame'}}">
+            <a href="https://www.woodstav.cz/#!/" target="blank"> <img src="/images/woodstav-logo.png" class="footer__image" alt="footer__image"> </a>
             <p>Realizace staveb ve spolupráci s
                 WOODSTAV.CZ s.r.o.,	
                 Skuhrov nad Bělou<br>	
