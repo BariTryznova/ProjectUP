@@ -58,8 +58,6 @@
 
             </a>
 
-
-
                 <nav class="header__menu">
 
                     <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
@@ -68,10 +66,10 @@
 
                     <ul class="menu__list">
 
-                        <li class="menu__item"><a class="menu__link" href="/">O nás</a></li>
-                        <li class="menu__item"><a class="menu__link" href="/co-delame/">Co děláme</a></li>
-                        <li class="menu__item"><a class="menu__link" href="/realizace/">Realizace</a></li>
-                        <li class="menu__item--margin"><a class="menu__link" class="header__menu--margin" href="/kontakt/">Kontakt</a></li>
+                        <li class="menu__item {{ 'menu__item--active' if page.fileSlug === '' }}"><a class="menu__link" href="/">O nás</a></li>
+                        <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'co-delame' }}"><a class="menu__link" href="/co-delame/">Co děláme</a></li>
+                        <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'realizace' }}"><a class="menu__link" href="/realizace/">Realizace</a></li>
+                        <li class="menu__item--margin {{ 'menu__item--active' if page.fileSlug === 'kontakt' }}"><a class="menu__link" class="header__menu--margin" href="/kontakt/">Kontakt</a></li>
 
                 </nav>
 

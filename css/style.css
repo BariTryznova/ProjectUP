@@ -91,8 +91,14 @@ body {
   text-decoration: none;
 }
 
-.menu__link:hover, .menu__link:focus, .menu__link:active {
+.menu__link:hover, .menu__link:focus {
   color: #BE9577;
+  border-bottom: 1px solid #BE9577;
+}
+
+.menu__item--active .menu__link {
+  color: #BE9577;
+  font-size: 23px;
   border-bottom: 1px solid #BE9577;
 }
 
