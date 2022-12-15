@@ -1,6 +1,6 @@
 @use '../helpers/variables';
 
-.footer {
+.footer__inner {
     display: flex;
     padding: 30px;
     align-items: center;
@@ -26,7 +26,7 @@
         margin-left: 60px;
     }
 
-    .footer {
+    .footer__inner {
         max-width: 1300px;
         margin-left: auto;
         margin-right: auto;

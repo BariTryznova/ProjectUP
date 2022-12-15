@@ -106,3 +106,50 @@
     font-size: 18px;
 }
 
+/* hero section */ 
+
+.hero--index {
+    background-image: url(/images/Homepage-image.jpeg);
+    color: white;
+    min-height: 320px;
+}
+
+.hero--codelame {
+    background-image: url(/images/co-delame-image.jpeg);
+    color: white;
+    min-height: 320px;
+}
+
+.hero--realizace {
+    background-image: url(/images/co-delame-image2.jpeg);
+}
+
+.hero--index h1 {
+    margin: 0 30px 0 0;;
+    padding-top: 40px;
+    font-size: 30px;
+    text-align: right;
+}
+
+.highlight {
+    font-weight: 700;
+    font-size: 38px;
+}
+
+@media (min-width: 640px) {
+    .hero--index h1 {
+        margin-right: 60px;
+    }
+}
+
+@media (min-width: 900px) {
+    .hero--index h1 {
+        margin: 0 30px 0 0;
+    }
+
+    .hero__inner {
+        max-width: 1300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
