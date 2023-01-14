@@ -114,6 +114,20 @@
     min-height: 320px;
 }
 
+.hero--index__codelame {
+    background-image: url(/images/codelame-hero2.jpeg);
+    color: white;
+    min-height: 320px;
+    background-position: center center;
+}
+
+.hero--index__realizace {
+    background-image: url(/images/codelame-hero.jpeg);
+    color: white;
+    min-height: 320px;
+    background-position: center center;
+}
+
 .hero--codelame {
     background-image: url(/images/co-delame-image.jpeg);
     color: white;
@@ -124,10 +138,10 @@
     background-image: url(/images/co-delame-image2.jpeg);
 }
 
-.hero--index h1 {
-    margin: 0 30px 0 0;;
+.hero--index h1, .hero--index__codelame h1, .hero--index__realizace h1 {
+    margin:0;
     padding-top: 40px;
-    font-size: 30px;
+    font-size: 40px;
     text-align: right;
 }
 
