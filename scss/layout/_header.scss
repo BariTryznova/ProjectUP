@@ -115,17 +115,18 @@
 }
 
 .hero--index__codelame {
-    background-image: url(/images/codelame-hero2.jpeg);
+    background-image: url(/images/codelame-hero4.jpg);
     color: white;
     min-height: 320px;
-    background-position: center center;
+    background-position: bottom right;
 }
 
 .hero--index__realizace {
     background-image: url(/images/codelame-hero.jpeg);
     color: white;
-    min-height: 320px;
+    min-height: 380px;
     background-position: center center;
+    background-attachment: fixed;
 }
 
 .hero--codelame {
@@ -138,10 +139,18 @@
     background-image: url(/images/co-delame-image2.jpeg);
 }
 
-.hero--index h1, .hero--index__codelame h1, .hero--index__realizace h1 {
+.hero--index__kontakt {
+    background-image: url(/images/codelame-hero3.jpg);
+    color: white;
+    min-height: 320px;
+    background-position: bottom;
+}
+
+.hero--index h1, .hero--index__codelame h1, .hero--index__realizace h1, .hero--index__kontakt h1 {
     margin:0;
     padding-top: 40px;
     font-size: 40px;
+    font-weight: 400;
     text-align: right;
 }
 
