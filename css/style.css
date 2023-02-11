@@ -167,14 +167,16 @@ body {
 .hero--index {
   background-image: url(/images/Homepage-image.jpeg);
   color: white;
-  min-height: 320px;
+  min-height: 380px;
+  background-attachment: fixed;
 }
 
 .hero--index__codelame {
   background-image: url(/images/codelame-hero4.jpg);
   color: white;
-  min-height: 320px;
+  min-height: 380px;
   background-position: bottom right;
+  background-attachment: fixed;
 }
 
 .hero--index__realizace {
@@ -188,7 +190,8 @@ body {
 .hero--codelame {
   background-image: url(/images/co-delame-image.jpeg);
   color: white;
-  min-height: 320px;
+  min-height: 380px;
+  background-attachment: fixed;
 }
 
 .hero--realizace {
@@ -198,8 +201,9 @@ body {
 .hero--index__kontakt {
   background-image: url(/images/codelame-hero3.jpg);
   color: white;
-  min-height: 320px;
+  min-height: 380px;
   background-position: bottom;
+  background-attachment: fixed;
 }
 
 .hero--index h1, .hero--index__codelame h1, .hero--index__realizace h1, .hero--index__kontakt h1 {
@@ -343,9 +347,10 @@ body {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
   }
-  .container-boxes__item {
-    flex: 1 1 40%;
+  .map {
+    grid-row: 2/3;
   }
 }
 @media (min-width: 900px) {
@@ -354,7 +359,7 @@ body {
   }
   .container-boxes__inner {
     margin-top: 30px;
-    max-width: 1200px;
+    max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -363,9 +368,19 @@ body {
   .container-boxes__inner {
     display: grid;
     gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 60px;
   }
 }
+.facebook {
+  width: 100px;
+  height: 100px;
+}
+
+.kostelec {
+  margin-left: 90px;
+}
+
 .container-kontakt {
   background-color: #C9C5C2;
 }
@@ -380,6 +395,7 @@ body {
 
 .container-kontakt__image {
   width: 250px;
+  height: 400px;
   border-radius: 15px;
   box-shadow: grey 4px 6px 10px;
   margin-left: calc(50% - 125px);
@@ -427,6 +443,12 @@ body {
     margin-left: 80px;
     width: 300px;
   }
+  .map {
+    border-radius: 15px;
+    box-shadow: grey 4px 6px 10px;
+    margin-top: 30px;
+    margin-left: 50px;
+  }
 }
 /* section introduction */
 .obal-introduction {
@@ -459,6 +481,10 @@ body {
   box-shadow: grey 4px 6px 10px;
 }
 
+.introduction p {
+  padding-top: 30px;
+}
+
 @media (min-width: 900px) {
   .introduction {
     max-width: 1300px;
@@ -471,6 +497,9 @@ body {
     width: 450px;
     height: auto;
     margin: 0;
+  }
+  .introduction p {
+    font-size: 20px;
   }
 }
 /* section icons */
