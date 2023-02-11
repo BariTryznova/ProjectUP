@@ -29,7 +29,6 @@
     text-align: center;
     padding-bottom: 50px;
     margin: 0 50px;
-    font-size: 30px; 
     text-shadow: 1px 1px 1px black;
     color: white;
 }
@@ -40,7 +39,7 @@
 }
 
 .introduction {
-    height: 800px;
+    min-height: 850px;
 }
 
 
@@ -62,11 +61,6 @@
         height: auto;
         margin: 0;
     }
-
-    .introduction p {
-        font-size: 20px;
-    }
-
 
 }
 

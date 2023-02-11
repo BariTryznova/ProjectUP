@@ -1,5 +1,5 @@
 .container {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 400;
     font-family: 'News Cycle', sans-serif;
 }
@@ -36,6 +36,10 @@
     .introcution__slogan {
         font-size: 25px;
     }
+
+    .introduction--text {
+        font-size: 25px;
+    }
 }
 
 // page - co delame
@@ -49,6 +53,10 @@
 @media (min-width: 780px)  {
     .container-realizace__boxes h3 {
         font-size: 25px;
+    }
+
+    .container {
+        font-size: 18px;
     }
 }
 
