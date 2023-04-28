@@ -1,5 +1,10 @@
 @use '../helpers/variables';
 
+.header__name {
+    color: white;
+    margin: 0 0 0 10px;
+}
+
 .header {
     background-color: variables.$zelena;
     border-bottom: 3px solid variables.$bezova;
@@ -55,8 +60,8 @@
 }
 
 .logo-projectup {
-    margin-left: 60px;
-    margin-top: 15px;
+    margin-left: 0;
+    margin-top: 10px;
 }
 
 @media (min-width: 640px) {
@@ -78,6 +83,17 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    .header__logo {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .header__name {
+        flex: 1 1;
+        margin-top: 25px;
+        margin-left: 10px;
+    }
 }
 
 @media (min-width: 900px) {
@@ -89,7 +105,7 @@
         max-width: 1300px;
     }
     .logo-projectup {
-        margin-left: 100px;
+        margin-left: 50px;
     }
 }
 
