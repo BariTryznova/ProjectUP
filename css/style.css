@@ -399,6 +399,17 @@ body {
 .facebook {
   width: 50px;
   height: 50px;
+  margin-top: 10px;
+}
+
+.linkedln {
+  width: 54px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.social {
+  display: flex;
 }
 
 .container-kontakt {
